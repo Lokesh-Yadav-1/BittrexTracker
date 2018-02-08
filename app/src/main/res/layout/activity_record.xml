@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lokesh.a173050049app.RecordActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:gravity="left"
+        >
+
+    <Spinner
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tSpinner"/>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record"
+android:layout_below="@id/my_toolbar"
+        android:layout_marginTop="30sp"
+        android:textSize="25sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:id="@+id/recordText"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recordText"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Recording"
+
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/startRecodingText"
+            android:padding="10sp"
+
+            />
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/startRecodingText"
+            android:background="@color/colorAccent"
+            android:layout_marginLeft="30sp"
+            />
+        <TextView
+            android:id="@+id/txtList5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="List of last 5 recordings"
+            android:layout_below="@id/startRecodingText"
+            android:layout_marginTop="30sp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txtTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:layout_below="@id/txtList5"
+            android:layout_marginTop="10sp"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/txtTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:layout_below="@id/txtTime1"
+            android:layout_marginTop="10sp"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/txtTime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:layout_below="@id/txtTime2"
+            android:layout_marginTop="10sp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txtTime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:layout_below="@id/txtTime3"
+            android:layout_marginTop="10sp"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/txtTime5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:layout_below="@id/txtTime4"
+            android:layout_marginTop="10sp"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

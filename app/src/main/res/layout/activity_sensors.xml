@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lokesh.a173050049app.SensorsActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:gravity="left"
+        >
+
+    <Spinner
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tSpinner"/>
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensors"
+        android:textSize="25sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:id="@+id/sensorsText"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="30sp"
+        android:layout_below="@id/my_toolbar"
+
+
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="1"
+        android:textAlignment="center"
+        android:layout_below="@id/sensorsText"
+        android:paddingHorizontal="10sp"
+        android:paddingVertical="10sp"
+        android:id="@+id/gridLayoutSensors"
+        android:layout_marginTop="50sp"
+        >
+
+
+        <CheckBox
+            android:text="Accelerometer"
+            android:textSize="18sp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30sp"/>
+
+        <CheckBox
+            android:text="GPS"
+            android:textSize="18sp"
+            android:layout_marginLeft="30sp"/>
+
+
+    </GridLayout>
+
+</RelativeLayout>
